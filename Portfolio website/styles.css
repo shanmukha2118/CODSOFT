@@ -1,140 +1,161 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    zoom: 90%; /* Decrease zoom to fit more content */
+    background-color: #f5f5f5;
 }
 
+/* Header Styling */
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+    background: linear-gradient(to right, #007bff, #00aaff);
     color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
 }
 
 /* About Section */
-#about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: white;
-}
-
 .about-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    max-width: 800px;
-    width: 100%;
-    gap: 20px;
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {
     flex: 1;
+    padding-right: 20px;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-left: auto; /* Align to the right */
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;  /* Square Image */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
 }
 
 /* Social Links */
 .social-links {
-    margin-top: 15px;
     display: flex;
-    justify-content: center; /* Center social icons */
     gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.social-links img {
-    width: 30px;
-    height: 30px;
+.social-links a img {
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s ease;
 }
 
-.social-links img:hover {
-    transform: scale(1.1);
+.social-links a img:hover {
+    transform: scale(1.2);
 }
 
 /* Skills Section */
 #skills {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    margin-top: 50px;
 }
 
 .skills-container {
     display: flex;
-    align-items: center;
-    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
 }
 
 .skill img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    vertical-align: middle;
+    width: 60px;
+    height: 60px;
 }
 
-/* Project Section */
+.skill p {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Projects Section */
 #projects {
     text-align: center;
-    padding: 40px 20px;
-    background-color: white;
+    margin-top: 50px;
 }
 
 .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto; /* Center the project content */
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 5px;
+.project h3 {
+    color: #007bff;
+    font-size: 1.5em;
 }
 
 /* Resume Section */
 #resume {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    margin-top: 50px;
 }
 
 #resume a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
-    color: #007BFF;
-    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#resume a:hover {
+    background-color: #0056b3;
 }
 
 /* Contact Section */
 #contact {
     text-align: center;
-    padding: 40px 20px;
-    background-color: white;
+    margin-top: 50px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #333;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #222;
     color: white;
-    margin-top: 20px;
+    margin-top: 50px;
 }
